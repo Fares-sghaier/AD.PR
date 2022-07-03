@@ -30,8 +30,8 @@ const Login = () => {
   };
   return (
     <div>
-        <h2 className="etafakna-title">E-Tafakna</h2>
-        <p className="etafakna-paragraphe">Choose the type of Contract that you want ,<br/> Sign and share it . </p>
+        <h2 className="etafakna-titl">Welcome</h2>
+        <p className="etafakna-paragraphe">Lets starts by adding your account<br/>Have fun</p>
     <div className="login_containerr">
        
        
@@ -58,15 +58,15 @@ const Login = () => {
               className="inputt"
             />
             {error && <div className="error_msgg">{error}</div>}
-            <button type="submit" className="green_btnn">
+            <button type="submit" className="green">
               Sing In
             </button>
           </form>
         </div>
-        <div className="rightt">
+        <div className="ri">
           <h1>New Here ?</h1>
           <Link to="/signup">
-            <button type="button" className="white_btnn">
+            <button type="button" className="white">
               Sing Up
             </button>
           </Link>

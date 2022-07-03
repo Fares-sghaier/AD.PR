@@ -3,6 +3,9 @@ const cors = require("cors");
 require("dotenv").config();
 const path = require("path");
 var items = require("./data");
+const fileupload = require('express-fileupload'); 
+
+
 
 const UserRoutes = require("./routes/User.routes");
 const AuthRoutes = require("./routes/Auth.routes");
@@ -10,6 +13,8 @@ const Path = require('path')
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+
+app.use(fileupload({useTempFiles: true}))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
